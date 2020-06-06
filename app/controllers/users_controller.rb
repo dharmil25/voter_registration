@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        render pdf: "filename.pdf",
+        render pdf: "user_card",
         template: "users/show.html.erb",
         layout: 'pdf.html'
       end
