@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p><strong>Image:</strong>
+<%= link_to @user.image.url do %>
+  <%= image_tag @user.image.url(:medium), class: "thumbnail" %>
+<% end %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @user.uid %>
+</p>
+
+<p>
+  <strong>F name:</strong>
+  <%= @user.f_name %>
+</p>
+
+<p>
+  <strong>L name:</strong>
+  <%= @user.l_name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @user.gender %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
+  <strong>Pincode:</strong>
+  <%= @user.pincode %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @user.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @user.state %>
+</p>
+
+<p id="pdf_link"><%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %> |
+<%= link_to 'Download', user_path(@user, format: "pdf") %></p>
+
