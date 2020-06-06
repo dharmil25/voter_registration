@@ -1,0 +1,7 @@
+<h1><strong><u>Graphical user data</u></strong></h1><br><br>
+
+
+<h2><strong><center>State-wise registered voters</center></strong></h2>
+<%= pie_chart @users.group(:state).count %><br><br>
+
+<%= link_to 'All Users', users_path %>

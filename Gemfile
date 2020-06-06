@@ -42,6 +42,7 @@ gem "paperclip", "~> 6.0.0"
 # gem 'prawn-table', '~> 0.1.0'
 gem 'wicked_pdf', '~> 1.1'  
 gem 'wkhtmltopdf-binary' 
+gem "chartkick"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

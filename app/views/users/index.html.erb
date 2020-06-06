@@ -5,7 +5,7 @@
 <h2><strong>Search</strong></h2>
 <%= form_for "", url: users_path, role: "search", method: :get do %>
   <%= text_field_tag :search, @search_term, placeholder: "Search" %>
-  <% end %>
+  <% end %><br><br>
 
 <table>
   <thead>
@@ -49,4 +49,5 @@
 
 <br>
 
-<%= link_to 'New User', root_path %>
+<%= link_to 'New User', root_path %> | 
+<%= link_to 'Graphical Representation of User Data', users_graphical_user_data_path %><br><br>
