@@ -51,7 +51,8 @@
   <%= @user.state %>
 </p>
 
-<p id="pdf_link"><%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'All Users', users_path %> |
-<%= link_to 'Download', user_path(@user, format: "pdf") %></p>
-
+<% unless request.format.to_sym == :pdf %>
+  <p id="pdf_link"><%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'All Users', users_path %> |
+  <%= link_to 'Download', user_path(@user, format: "pdf") %></p>
+<% end %>
